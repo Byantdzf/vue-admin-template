@@ -51,8 +51,8 @@
             const router = useRouter()
             const route = useRoute()
             const form = reactive({
-                name: 'admin',
-                password: '123456'
+                name: '',
+                password: ''
             })
             const passwordType = ref('password')
             const passwordTypeChange = () => {

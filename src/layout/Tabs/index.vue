@@ -48,8 +48,8 @@ export default defineComponent({
     const scrollbarDom = ref(null)
     const allRoutes = router.options.routes
     const defaultMenu = {
-      path: '/dashboard',
-      meta: { title: '首页', hideClose: true }
+      path: '/merchantMGT',
+      meta: { title: '商家管理', hideClose: true }
     }
     const contentFullScreen = computed(() => store.state.app.contentFullScreen)
     const currentDisabled = computed(() => route.path === defaultMenu.path)
@@ -58,7 +58,7 @@ export default defineComponent({
     let menuList = ref(tabsHook.getItem())
     if (menuList.value.length === 0) { // 判断之前有没有调用过
       addMenu(defaultMenu)
-    } 
+    }
     watch(menuList.value, (newVal) => {
       tabsHook.setItem(newVal)
     })
@@ -78,7 +78,7 @@ export default defineComponent({
     function pageReload() {
       const self = route.matched[route.matched.length-1].instances.default
       // console.log(route.matched);
-      
+
       self.handleReload();
       // const { fullPath, meta, name } = unref(route);
       // if (meta.cache && name) {

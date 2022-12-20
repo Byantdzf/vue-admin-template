@@ -14,8 +14,10 @@ import MenuBox from '@/components/menu/index.vue'
 import { createNameComponent } from './createNode'
 
 // 引入modules
-import Dashboard from './modules/dashboard'
-import Pages from './modules/pages'
+import merchantMGT from './modules/merchantMGT'
+import topUpMGT from './modules/topUpMGT'
+import invokingMGT from './modules/invokingMGT'
+// import Pages from './modules/pages'
 import System from './modules/system'
 
 let modules = [
@@ -29,12 +31,14 @@ const router = createRouter({
   routes
 })
 let asyncRoutes = [
-  ...Dashboard,
-  ...Pages,
+  ...merchantMGT,
+  ...topUpMGT,
+  ...invokingMGT,
+  // ...Pages,
 ]
 // 动态路由的权限新增，供登录后调用
 export function addRoutes() {
-  
+
   // let data = [
   //   {
   //     path: '/echarts',
