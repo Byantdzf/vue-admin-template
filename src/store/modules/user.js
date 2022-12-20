@@ -29,11 +29,11 @@ const actions = {
         return new Promise((resolve, reject) => {
             loginApi(params)
                 .then(res => {
-                    commit('tokenChange', res.data.token)
-                    dispatch('getInfo', {token: res.data.token})
-                        .then(infoRes => {
-                            resolve(res.data.token)
-                        })
+                    commit('tokenChange', res.data.access_token)
+                    // dispatch('getInfo', {token: res.data.access_token})
+                    //     .then(infoRes => {
+                            resolve(res.data.access_token)
+                    //     })
                 })
         })
     },

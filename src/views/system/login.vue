@@ -36,8 +36,8 @@
       const router = useRouter()
       const route = useRoute()
       const form = reactive({
-        name: 'admin',
-        password: '123456'
+        mobile: "15707534403",
+        password: "a15707534403"
       })
       const passwordType = ref('password')
       const passwordTypeChange = () => {
@@ -65,7 +65,7 @@
       const submit = () => {
         checkForm().then(() => {
           let params = {
-            name: form.name,
+            mobile: form.name,
             password: form.password
           }
           store.dispatch('user/login', params).then(() => {
@@ -75,8 +75,10 @@
               showClose: true,
               duration: 1000
             })
-            addRoutes()
-            router.push(route.query.redirect || '/')
+            setTimeout(()=>{
+              addRoutes()
+              router.push(route.query.redirect || '/')
+            },1200)
           })
         })
       }

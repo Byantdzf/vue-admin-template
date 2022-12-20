@@ -36,13 +36,14 @@ service.interceptors.request.use(
 service.interceptors.response.use(
     (response) => {
         const res = response.data
-        // if (res.code === 200) {
-        return res
-        // } else {
-        //   showError(res)
-        //   return Promise.reject(res)
-        // }
+        if (res.code === 0) {
+            return res
+        } else {
+            showError(res)
+            return Promise.reject(res)
+        }
     },
+
     (error) => {
         console.log(error) // for debug
         const badMessage = error.message || error
@@ -53,6 +54,8 @@ service.interceptors.response.use(
 )
 
 function showError(error) {
+    // console.log(error)
+    // debugger
     if (error.code === 2) {
         // to re-login
         store.dispatch('user/loginOut')

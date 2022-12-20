@@ -7,7 +7,7 @@ const users = [
   }},
   { name: 'test', password: '123456', token: 'test', info: {
     name: '测试人员'
-  }},
+  }}
 ]
 export default [
   {
@@ -19,10 +19,10 @@ export default [
       })
       if (user) {
         return {
-          code: 200,
+          code: 0,
           data: {
-            token: user.token,
-          },
+            token: user.token
+          }
         };
       } else {
         return {
@@ -31,7 +31,6 @@ export default [
           msg: '用户名或密码错误'
         };
       }
-      
     }
   },
   {
@@ -44,10 +43,10 @@ export default [
       }).info
       if (info) {
         return {
-          code: 200,
+          code: 0,
           data: {
             info: info
-          },
+          }
         };
       } else {
         return {
@@ -56,7 +55,6 @@ export default [
           msg: '无访问权限'
         };
       }
-      
     }
   },
   {
@@ -64,7 +62,7 @@ export default [
     method: 'post',
     response: () => {
       return {
-        code: 200,
+        code: 0,
         data: {},
         msg: 'success'
       };
@@ -75,10 +73,10 @@ export default [
     method: 'post',
     response: () => {
       return {
-        code: 200,
+        code: 0,
         data: {},
         msg: 'success'
       };
     }
-  },
+  }
 ]

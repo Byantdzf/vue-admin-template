@@ -5,62 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc8ebd89-ef8c-4c8e-9315-bd285a47859c" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/js.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/mock/table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/mock/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/style/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/style/common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layer/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layer/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/table/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/table/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/directive/drag/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/directive/drag/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Header/Breadcrumb.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header/Breadcrumb.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Header/functionList/fullscreen.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header/functionList/fullscreen.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Header/functionList/sizeChange.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header/functionList/sizeChange.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Header/functionList/theme.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header/functionList/theme.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Header/functionList/theme/theme-color.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header/functionList/theme/theme-color.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Header/functionList/theme/theme-icon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header/functionList/theme/theme-icon.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Header/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Header/passwordLayer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header/passwordLayer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Logo/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Logo/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Menu/Link.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Menu/Link.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Menu/MenuItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Menu/MenuItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Menu/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Menu/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Tabs/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Tabs/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Tabs/item.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Tabs/item.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Tabs/tabsHook.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Tabs/tabsHook.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/createNode.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/createNode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/modules/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/modules/dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/modules/pages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/modules/pages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/modules/system.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/modules/system.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/reload.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/reload.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/modules/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/modules/keepAlive.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/keepAlive.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/modules/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/plugins/persistent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/plugins/persistent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/modules/dark.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/modules/dark.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/system/nprogress.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/system/nprogress.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/system/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/system/request.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/system/statistics.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/system/statistics.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/system/title.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/system/title.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/main/dashboard/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/main/dashboard/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/main/pages/categoryTable/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/main/pages/categoryTable/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/main/pages/crudTable/enum.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/main/pages/crudTable/enum.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/main/pages/crudTable/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/main/pages/crudTable/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/main/pages/crudTable/layer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/main/pages/crudTable/layer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/system/401.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/system/401.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/system/404.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/system/404.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/system/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/system/login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/system/redirect.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/system/redirect.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +71,7 @@
       <updated>1671183110036</updated>
       <workItem from="1671183111187" duration="4992000" />
       <workItem from="1671261542398" duration="31195000" />
-      <workItem from="1671505924111" duration="8040000" />
+      <workItem from="1671505924111" duration="10197000" />
     </task>
     <servers />
   </component>
