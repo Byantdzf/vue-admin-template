@@ -15,6 +15,7 @@
         <el-table-column label="操作" align="center" fixed="right" width="200">
           <template #default>
             <el-button link type="primary" size="small">充值</el-button>
+            <el-button link type="primary" size="small">详情</el-button>
           </template>
         </el-table-column>
       </Table>
