@@ -3,32 +3,17 @@
     <div class="box">
       <h1>{{ systemTitle }}</h1>
       <ElForm class="form">
-        <ElInput
-            size="large"
-            v-model="form.name"
-            placeholder="用户名"
-            type="text"
-            maxlength="50"
-        >
+        <ElInput size="large" v-model="form.name" placeholder="用户名" type="text" maxlength="50">
           <template #prepend>
             <i class="sfont system-xingmingyonghumingnicheng"></i>
           </template>
         </ElInput>
-        <ElInput
-            size="large"
-            ref="password"
-            v-model="form.password"
-            :type="passwordType"
-            placeholder="密码"
-            name="password"
-            maxlength="50"
-        >
+        <ElInput size="large" ref="password" v-model="form.password" :type="passwordType" placeholder="密码" name="password" maxlength="50">
           <template #prepend>
             <i class="sfont system-mima"></i>
           </template>
           <template #append>
-            <i class="sfont password-icon" :class="passwordType ? 'system-yanjing-guan': 'system-yanjing'"
-               @click="passwordTypeChange"></i>
+            <i class="sfont password-icon" :class="passwordType ? 'system-yanjing-guan': 'system-yanjing'" @click="passwordTypeChange"></i>
           </template>
         </ElInput>
         <ElButton type="primary" @click="submit" style="width: 100%;" size="medium">登录</ElButton>
@@ -38,12 +23,12 @@
 </template>
 
 <script>
-  import { systemTitle } from '@/config'
-  import { defineComponent, ref, reactive } from 'vue'
-  import { useStore } from 'vuex'
-  import { useRouter, useRoute } from 'vue-router'
-  import { addRoutes } from '@/router'
-  import { ElMessage } from 'element-plus'
+  import {systemTitle} from '@/config'
+  import {defineComponent, reactive, ref} from 'vue'
+  import {useStore} from 'vuex'
+  import {useRoute, useRouter} from 'vue-router'
+  import {addRoutes} from '@/router'
+  import {ElMessage} from 'element-plus'
 
   export default defineComponent({
     setup() {
@@ -78,25 +63,22 @@
         })
       }
       const submit = () => {
-        checkForm()
-          .then(() => {
-            let params = {
-              name: form.name,
-
-              password: form.password
-            }
-            store.dispatch('user/login', params)
-              .then(() => {
-                ElMessage.success({
-                  message: '登录成功',
-                  type: 'success',
-                  showClose: true,
-                  duration: 1000
-                })
-                addRoutes()
-                router.push(route.query.redirect || '/')
-              })
+        checkForm().then(() => {
+          let params = {
+            name: form.name,
+            password: form.password
+          }
+          store.dispatch('user/login', params).then(() => {
+            ElMessage.success({
+              message: '登录成功',
+              type: 'success',
+              showClose: true,
+              duration: 1000
+            })
+            addRoutes()
+            router.push(route.query.redirect || '/')
           })
+        })
       }
       return {
         systemTitle,

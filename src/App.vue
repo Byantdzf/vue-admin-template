@@ -5,20 +5,22 @@
 </template>
 
 <script>
-    import { defineComponent } from 'vue'
-    import locale from 'element-plus/lib/locale/lang/zh-cn'
-    export default defineComponent({
-        name: 'App',
-        setup() {
-            return {
-                locale
-            }
-        }
-    })
+  import {defineComponent} from 'vue'
+  import locale from 'element-plus/lib/locale/lang/zh-cn'
+
+  export default defineComponent({
+    name: 'App',
+    setup() {
+      return {
+        locale
+      }
+    }
+  })
 </script>
 
 <style>
 @import "../src/assets/style/reset.scss";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
