@@ -38,75 +38,75 @@
 </template>
 
 <script>
-    import { systemTitle } from '@/config'
-    import { defineComponent, ref, reactive } from 'vue'
-    import { useStore } from 'vuex'
-    import { useRouter, useRoute } from 'vue-router'
-    import { addRoutes } from '@/router'
-    import { ElMessage } from 'element-plus'
+  import {systemTitle} from '@/config'
+  import {defineComponent, ref, reactive} from 'vue'
+  import {useStore} from 'vuex'
+  import {useRouter, useRoute} from 'vue-router'
+  import {addRoutes} from '@/router'
+  import {ElMessage} from 'element-plus'
 
-    export default defineComponent({
-        setup() {
-            const store = useStore()
-            const router = useRouter()
-            const route = useRoute()
-            const form = reactive({
-                name: 'admin',
-                password: '123456'
+  export default defineComponent({
+    setup() {
+      const store = useStore()
+      const router = useRouter()
+      const route = useRoute()
+      const form = reactive({
+        name: 'admin',
+        password: '123456'
+      })
+      const passwordType = ref('password')
+      const passwordTypeChange = () => {
+        passwordType.value === '' ? passwordType.value = 'password' : passwordType.value = ''
+      }
+      const checkForm = () => {
+        return new Promise((resolve, reject) => {
+          if (form.name === '') {
+            ElMessage.warning({
+              message: '用户名不能为空',
+              type: 'warning'
             })
-            const passwordType = ref('password')
-            const passwordTypeChange = () => {
-                passwordType.value === '' ? passwordType.value = 'password' : passwordType.value = ''
-            }
-            const checkForm = () => {
-                return new Promise((resolve, reject) => {
-                    if (form.name === '') {
-                        ElMessage.warning({
-                            message: '用户名不能为空',
-                            type: 'warning'
-                        })
-                        return;
-                    }
-                    if (form.password === '') {
-                        ElMessage.warning({
-                            message: '密码不能为空',
-                            type: 'warning'
-                        })
-                        return;
-                    }
-                    resolve(true)
-                })
-            }
-            const submit = () => {
-                checkForm()
-                    .then(() => {
-                        let params = {
-                            name: form.name,
+            return;
+          }
+          if (form.password === '') {
+            ElMessage.warning({
+              message: '密码不能为空',
+              type: 'warning'
+            })
+            return;
+          }
+          resolve(true)
+        })
+      }
+      const submit = () => {
+        checkForm()
+          .then(() => {
+            let params = {
+              name: form.name,
 
-                            password: form.password
-                        }
-                        store.dispatch('user/login', params)
-                            .then(() => {
-                                ElMessage.success({
-                                    message: '登录成功',
-                                    type: 'success',
-                                    showClose: true,
-                                    duration: 1000
-                                })
-                                addRoutes()
-                                router.push(route.query.redirect || '/')
-                            })
-                    })
+              password: form.password
             }
-            return {
-                systemTitle,
-                form,
-                passwordType,
-                passwordTypeChange,
-                submit
-            }
-        }
-    })
+            store.dispatch('user/login', params)
+              .then(() => {
+                ElMessage.success({
+                  message: '登录成功',
+                  type: 'success',
+                  showClose: true,
+                  duration: 1000
+                })
+                addRoutes()
+                router.push(route.query.redirect || '/')
+              })
+          })
+      }
+      return {
+        systemTitle,
+        form,
+        passwordType,
+        passwordTypeChange,
+        submit
+      }
+    }
+  })
 </script>
 
 <style lang="scss" scoped>
